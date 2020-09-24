@@ -1,23 +1,120 @@
-#canvas1 {
-    border:3px solid black;
+#holder{
+  position: relative;
 }
-#round1 {
+#cup1{
+      position: absolute;
+      border-bottom: 240px solid brown;
+      border-left: 30px solid transparent;
+      border-right: 30px solid transparent;
+     
+      height: 0;
+      width: 170px;
+      top: 300px; 
+      left:300px; 
+
+}
+#cup2{
+  position: absolute;
+  border-bottom: 240px solid brown;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  height: 0;
+  width: 170px;
+  top: 300px; 
+  left:700px;
+}
+#cup3{
+  position: absolute;
+  border-bottom: 240px solid brown;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  height: 0;
+  width: 170px;
+  top: 300px; 
+  left:1100px;
+}
+#ball{
+    width: 60px;
+    height: 60px;
+    background-color:black;
+    border-radius: 40px;
     position: absolute;
-    top: 0;
-  }
-#round2 {
-    left: 0;
-  }
+    top: 430px; 
+    left:765px;
+    background: radial-gradient(circle at 25px 25px, #5cabff, #000);
+    
+} 
+#shuff3{
+  border-color: springgreen;
+  position: absolute;
+  top: 100px; 
+  left:765px;
+}
+#shuff2{
+  border-color: springgreen;
+  position: absolute;
+  top: 100px; 
+  left:765px;
+}
+#shuff1{
+  border-color: springgreen;
+  position: absolute;
+  top: 100px; 
+  left:765px;
+  padding: 7px;
+}
+#lift{
+  border-color: springgreen;
+  position: absolute;
+  top: 200px; 
+  left:765px;
+  padding: 5px;
+}
+#label1{
+  font-size: 30px;
+  position: absolute;
+  top: 550px; 
+  left:385px
   
-#round3 {
-    left: 150px;
-  }
-#buttonParent {
-    position: relative;
-  }
-body{
-    margin:0;
-    background: url("/images/tableTop.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+}
+#label2{
+  font-size: 30px;
+  position: absolute;
+  top: 550px; 
+  left:785px
+}
+#label3{
+  font-size: 30px;
+  position: absolute;
+  top: 550px; 
+  left: 1185px 
+}
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(tan,white),linear-gradient(tan,transparent),url("./images/tableTop.png");
+  
+}
+#scoreBoardFrame{
+  padding-left: 5px;
+  padding-top: 5px;
+  outline: 8px solid brown;
+  height: 90px;
+  width: 160px;
+  position: absolute;
+  top: 30px; 
+  left: 900px 
+  
+
+  
+}
+#winnerBoardFrame{
+  padding-left: 5px;
+  padding-top: 5px;
+  outline: 8px solid green;
+  height: 90px;
+  width: 160px;
+  position: absolute;
+  top: 30px; 
+  left: 535px; 
 }

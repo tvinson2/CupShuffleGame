@@ -1,10 +1,10 @@
-var canvas = document.getElementById('canvas1');
+var canvas = document.getElementById('canvas');
 var context = canvas.getContext('2d');
 
 
           ///Cup1///
   function round1(){
-    var a1 = document.getElementById("canvas1");
+    var a1 = document.getElementById("canvas");
     var cup1 = a1.getContext("2d");
     cup1.beginPath();
     cup1.rect(300,550, 150, 100);
@@ -12,7 +12,7 @@ var context = canvas.getContext('2d');
     cup1.fill();
     cup1.stroke();
           ///Cup2///
-    var a2 = document.getElementById("canvas1");
+    var a2 = document.getElementById("canvas");
     var cup2 = a2.getContext("2d");
     cup2.beginPath();
     cup2.rect(640,550, 150, 100);
@@ -20,7 +20,7 @@ var context = canvas.getContext('2d');
     cup2.fill();
     cup2.stroke();
           ///Cup3///
-    var a3 = document.getElementById("canvas1");
+    var a3 = document.getElementById("canvas");
     var cup3 = a3.getContext("2d");
     cup3.beginPath();
     cup3.rect(985,550, 150, 100);
@@ -32,7 +32,7 @@ var context = canvas.getContext('2d');
   round1();
 
   //////// Draw Ball ///
-  var ball = document.getElementById("canvas1");
+  var ball = document.getElementById("canvas");
   var gameBall = ball.getContext("2d");
   gameBall.beginPath();
   gameBall.arc(375, 600, 10, 0, Math.PI*2);

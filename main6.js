@@ -2,7 +2,25 @@ var canvas = document.getElementById('canvas1');
 var context = canvas.getContext('2d');
 
 
-          ///Cup1///
+
+function myMove() {
+  var elem = document.getElementById("");   
+  var pos = 0;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (pos == 350) {
+      clearInterval(id);
+    } else {
+      pos++; 
+      elem.style.top = pos + 'px'; 
+      elem.style.left = pos + 'px'; 
+    }
+  }
+}
+
+
+/*
+          /Cup1///
   function round1(){
     var a1 = document.getElementById("canvas1");
     var cup1 = a1.getContext("2d");
@@ -30,8 +48,41 @@ var context = canvas.getContext('2d');
     cup3.stroke();
   }
   round1();
+*/
+/////////////Cup Creation////////
+// var context = canvas.getContext("2d")
+// var positions = [150,350,550,750,950,1150,1350];
+// var cups = [];
+// function drawCup(whatx, whaty){
+//   context.fillStyle = "ff0000";
+//   context.fillRect(whatx, whaty, 150, 100);
+// }
+// function Cup(id,x,y){
+//   this.id = id;
+//   this.x = x;
+//   this.y = y;
+//   drawCup(this.x,this.y);
+//   function Dash(speedx,speedy){
+//     this.x += speedx;
+//     this.y += speedy;
+//     context.clearRect(this.x,thisy,150,100);
+//     drawCup(this.x,this.y);
+//   }   
+//   this.Dash = Dash;
+// }
+// //three cups
+// for(var i = 0; i<4; i++){
+//   cups[i-1] = new Cup(i,positions[i-1],550);
+//   console.log ("Cups");
+// }
 
-  //////// Draw Ball ///
+//setInterval(function(){cups[2].Dash(3,0);},200)
+// console.log(cups[0].x);
+// console.log("hello world??");
+
+
+
+////////// Draw Ball ///
   var ball = document.getElementById("canvas1");
   var gameBall = ball.getContext("2d");
   gameBall.beginPath();
@@ -40,14 +91,6 @@ var context = canvas.getContext('2d');
   gameBall.fill();
   gameBall.strokeStyle = "#ff0000";//black
   gameBall.stroke();
- 
- 
- 
-  ///// Movement
-  /*
-  create a shuffle movement that will just 
-  play into the predetermined shuffles 
-  */
  
  
   //////////////Ball Placement//////////////
@@ -64,7 +107,6 @@ var context = canvas.getContext('2d');
     gameBall.stroke();
   }
     
-
 
   ///// Scoreboard function
 
@@ -97,7 +139,7 @@ var context = canvas.getContext('2d');
           }
         }
       }
-      }
+  }
 
   function shuff2(){
       hideBall();
@@ -151,11 +193,9 @@ var context = canvas.getContext('2d');
     }
   }
   } 
-/////////////
+///////////// 
 
-
-
-  function myMove() {
+  function myMove(){
     var gameBall = document.getElementById("canvas1");
     var gameBall = ball.getContext("2d");
    
@@ -172,13 +212,11 @@ var context = canvas.getContext('2d');
     }
   }
 
-
-
-
-
-
   /////////Replay game button function
       function replayGame(){
         location.reload();
       }
-  
+      
+/////// Movement /////
+
+       

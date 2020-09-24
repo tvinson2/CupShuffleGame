@@ -1,25 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel ="stylesheet" href="./style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title> 
-    <link rel="stylesheet" href="./style.css">
-    <script src="./main.js"></script>
+    <title>Document</title>
 </head>
 
 <body>
-    
-    <canvas id="canvas1" width="1480" height="800"></canvas>
-<div><p></p></div>
-<div id="buttonParent">
-<div id="shuffle"><button onclick="shuffCups()">Shuffle</button></div>
-<div id="child round1"><button onclick="shuff1()">Choose a cup*</button></div>
-<div id="child round2"><button onclick="shuff2()">Choose again**</bulstton></div>
-<div id="child round3"><button onclick="shuff3()">Choose again***</button></div>
+<div id="scoreBoardFrame">
+    Player Score<input id="scoreBoard" type="text">
+    Computer Score<input id="scoreBoard2" type="text"> 
 </div>
+<div id = "winnerBoardFrame">
+    Player Win<input id="playerWin" type="text">
+    Computer Win <input id="comWin" type="text">
+</div>
+<div id = "holder">
+    <div id="ball"></div>
+    <div id="cup1"></div>
+    <div id="cup2"></div>
+    <div id="cup3"></div>
+    
+</div> 
 
 
-<script type="text/javascript" src="./main.js"></script>
+<button id="shuff3">Shuffle 3</button>
+<button id="shuff2">Shuffle 2</button>
+<button id="shuff1">Shuffle 1</button>
+<button id="lift">Show Ball</button>
+
+<div id="label3">Cup 3</div>
+<div id="label2">Cup 2</div>
+<div id="label1">Cup 1</div>
+<br><br><br><br><br>
+1. Show the ball
+<br>
+2. Start the Game by shuffling the cups
+<br>
+3. Guess which cup the ball is in. Play 3 rounds
+
+<script src="./main_33.js"></script>
 </body>
 </html>
